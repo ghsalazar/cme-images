@@ -1,8 +1,13 @@
 SRCDIR = ../src
 FIGURES = $(patsubst %.mp, %.svg, $(notdir $(wildcard $(SRCDIR)/*.mp)))
+ASSETS = $(notdir $(wildcard ../assets/*.png))
 
 all: $(FIGURES)
+	cp ../assets/*.png .
+	chmod 644 *.png
 
+%.png: ../assets/%.png
+	@echo cp $< $@
 
 %.svg: $(SRCDIR)/%.mp
 	mpost $<

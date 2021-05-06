@@ -1,0 +1,5 @@
+.history/
+.vscode/
+src/*.mpx
+images/*.log
+

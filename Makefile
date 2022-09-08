@@ -7,7 +7,7 @@ all:
 
 distclean:
 	make -C images	$@
-	make -C src		$@
+	make -C src	$@
 
 clean:
 	make -C images $@

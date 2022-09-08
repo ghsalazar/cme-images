@@ -1,7 +1,7 @@
 input boxes;
 
 prologues := 3;
-outputformat := "svg";
+%outputformat := "svg";
 outputtemplate := "%j-%c.%o";
 
 beginfig(1);
